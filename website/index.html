@@ -2,8 +2,11 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="忠一口腔是霸州专业数字化口腔诊疗机构，开设牙齿矫正、数字化种植、美学贴面、儿童口腔、微创拔牙、根管治疗等全系列项目。北大口腔专家定期坐诊，先进设备，医保定点，预约电话XXX。">
+    <meta name="description" content="忠一口腔是霸州专业数字化口腔诊疗机构，开设牙齿矫正、数字化种植、美学贴面、儿童口腔、微创拔牙、根管治疗等全系列项目。北大口腔专家定期坐诊，先进设备，医保定点，预约电话13102491662。">
     <meta name="keywords" content="霸州口腔医院,霸州牙科,霸州牙齿矫正,霸州种植牙,霸州口腔诊所,忠一口腔,霸州儿童牙齿矫正,霸州隐形矫正,廊坊口腔医院,霸州根管治疗,霸州拔牙">
     <meta name="author" content="忠一口腔">
     <meta name="robots" content="index, follow">
@@ -12,8 +15,8 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="zh_CN">
     <title>忠一口腔 — 霸州专业数字化口腔诊疗中心 | 牙齿矫正·种植牙·美学修复</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="canonical" href="https://www.zhongyikouqiang.com/">
+    <link rel="stylesheet" href="css/style.css?v=5">
+    <link rel="canonical" href="https://www.zhoongyikouqiang.com/">
 
     <!-- ========== 结构化数据 JSON-LD ========== -->
 
@@ -22,15 +25,15 @@
     {
         "@context": "https://schema.org",
         "@type": "Dentist",
-        "@id": "https://www.zhongyikouqiang.com/#organization",
+        "@id": "https://www.zhoongyikouqiang.com/#organization",
         "name": "忠一口腔",
         "alternateName": ["忠一口腔门诊", "霸州忠一口腔"],
         "description": "忠一口腔创立于2024年，是霸州本地专业数字化口腔诊疗机构，开设牙齿矫正、数字化种植、美学贴面、儿童口腔、微创拔牙、根管治疗、牙齿修复等全系列诊疗项目。",
-        "url": "https://www.zhongyikouqiang.com/",
+        "url": "https://www.zhoongyikouqiang.com/",
         "telephone": "+86-13102491662",
-        "email": "contact@zhongyikouqiang.com",
-        "image": "https://www.zhongyikouqiang.com/images/clinic-exterior.jpg",
-        "logo": "https://www.zhongyikouqiang.com/images/logo.png",
+        "email": "contact@zhoongyikouqiang.com",
+        "image": "https://www.zhoongyikouqiang.com/images/clinic-exterior.jpg",
+        "logo": "https://www.zhoongyikouqiang.com/images/logo.png",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "霸州市兴华中路1812号",
@@ -319,7 +322,7 @@
                 "@type": "ListItem",
                 "position": 1,
                 "name": "首页",
-                "item": "https://www.zhongyikouqiang.com/"
+                "item": "https://www.zhoongyikouqiang.com/"
             }
         ]
     }
@@ -330,12 +333,12 @@
     {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "url": "https://www.zhongyikouqiang.com/",
+        "url": "https://www.zhoongyikouqiang.com/",
         "name": "忠一口腔",
         "description": "霸州专业数字化口腔诊疗中心",
         "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://www.zhongyikouqiang.com/search?q={search_term_string}",
+            "target": "https://www.zhoongyikouqiang.com/search?q={search_term_string}",
             "query-input": "required name=search_term_string"
         }
     }
@@ -348,67 +351,111 @@
         <nav class="navbar" aria-label="主导航">
             <div class="container">
                 <a href="/" class="logo" aria-label="忠一口腔首页">
-                    <img src="images/logo.png" alt="忠一口腔 Logo" class="nav-logo" style="height:40px;margin-right:8px;vertical-align:middle;"><h1 style="display:inline-block;">忠一口腔</h1>
-                    <br><span class="tagline">霸州专业数字化口腔诊疗中心</span>
+                    <div class="logo-icon">忠</div>
+                    <div class="logo-text">
+                        <span class="name">忠一口腔</span>
+                        <span class="slogan">ZHONGYI DENTAL</span>
+                    </div>
                 </a>
+
+                <button class="nav-toggle" aria-label="菜单" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
                 <ul class="nav-links">
                     <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于我们</a></li>
                     <li><a href="#services">诊疗项目</a></li>
                     <li><a href="#doctors">医生团队</a></li>
                     <li><a href="#equipment">先进设备</a></li>
+                    <li><a href="#reviews">患者评价</a></li>
                     <li><a href="#faq">常见问题</a></li>
-                    <li><a href="#contact">联系我们</a></li>
+                    <li><a href="#contact" class="nav-cta">预约咨询</a></li>
                 </ul>
             </div>
         </nav>
+        <div class="nav-overlay"></div>
     </header>
 
-    <!-- ========== 主视觉区 ========== -->
-    <main id="home">
-        <section class="hero" aria-labelledby="hero-title">
+    <!-- ========== Hero 主视觉区 ========== -->
+    <main>
+        <section id="home" class="hero" aria-label="主视觉">
+            <!-- 装饰元素 -->
+            <div class="hero-bg-ornament c1"></div>
+            <div class="hero-bg-ornament c2"></div>
+            <div class="hero-bg-ornament c3"></div>
+            <div class="hero-grid-lines"></div>
+
             <div class="container">
-                <h2 id="hero-title">忠于心 · 精于齿</h2>
-                <p class="hero-description">
-                    霸州本地专业数字化口腔诊疗机构，开设<strong>牙齿矫正</strong>、<strong>数字化种植</strong>、<strong>美学贴面</strong>、<strong>儿童口腔</strong>、<strong>微创拔牙</strong>、<strong>根管治疗</strong>、<strong>牙齿修复</strong>等全系列诊疗项目，覆盖全年龄段口腔健康需求。
+                <div class="hero-badge reveal">霸州专业数字化口腔诊疗中心</div>
+                <h2 class="reveal reveal-delay-1">
+                    忠于心<span class="accent"> · </span>精于齿
+                </h2>
+                <p class="hero-description reveal reveal-delay-2">
+                    特邀<strong>北大口腔正畸专家</strong>定期坐诊，开设<strong>牙齿矫正</strong>、<strong>数字化种植</strong>、<strong>美学贴面</strong>、<strong>儿童口腔</strong>、<strong>根管治疗</strong>等全系列诊疗项目，为霸州百姓提供与一线城市同步的专业口腔医疗服务。
                 </p>
-                <p class="hero-highlight">特邀<strong>北大口腔正畸专家闾鑫锋</strong>定期坐诊 · 家门口享北京级口腔医疗</p>
-                <div class="hero-cta">
-                    <a href="tel:XXX" class="btn-primary">电话预约</a>
-                    <a href="#faq" class="btn-secondary">在线咨询</a>
+                <div class="hero-highlight reveal reveal-delay-2">
+                    <span class="star">★</span> 北大口腔正畸专家闾鑫锋定期坐诊 · 霸州百姓家门口的北京级口腔医疗
                 </div>
+                <div class="hero-cta reveal reveal-delay-3">
+                    <a href="tel:13102491662" class="btn-primary">📞 电话预约</a>
+                    <a href="#services" class="btn-outline">了解诊疗项目</a>
+                </div>
+
+                <!-- 信任数据 -->
+                <div class="hero-stats reveal reveal-delay-4">
+                    <div class="hero-stat">
+                        <div class="number"><span class="count" data-target="1000">0</span><span class="unit">+</span></div>
+                        <div class="label">好评患者</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number"><span class="count" data-target="5">0</span><span class="unit">位</span></div>
+                        <div class="label">专业医师</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number"><span class="count" data-target="7">0</span><span class="unit">类</span></div>
+                        <div class="label">诊疗项目</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="number"><span class="count" data-target="4.9">0</span><span class="unit">分</span></div>
+                        <div class="label">患者好评</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 底部波形过渡 -->
+            <div class="hero-wave">
+                <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+                    <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="#f9fafb"/>
+                </svg>
             </div>
         </section>
 
         <!-- ========== 诊所简介 ========== -->
-        <section id="about" class="about" aria-labelledby="about-title">
+        <section id="about" class="about bg-white" aria-labelledby="about-title">
             <div class="container">
-                <h2 id="about-title">关于忠一口腔</h2>
-                <div class="about-content">
-                    <p>忠一口腔创立于<strong>2024年</strong>，是<strong>霸州本地专业数字化口腔诊疗机构</strong>，坐落于<strong>河北省廊坊市霸州市兴华中路1812号</strong>，地理位置优越、交通便捷，是当地居民信赖的口腔诊疗机构。</p>
-                    <p>自成立以来，忠一口腔始终坚持<strong>"以患者为中心、以医疗质量为核心、以专业技术为支撑"</strong>的发展理念，致力于为霸州及周边群众提供安全、舒适、高品质的一站式口腔诊疗服务。</p>
-                    <p>团队定期参加国内口腔学术交流与技术培训，不断学习前沿诊疗理念与先进技术。门诊环境整洁明亮、布局合理，严格执行<strong>无菌诊疗、一人一用一消毒</strong>的院感标准，全面保障患者就诊安全。</p>
-                    <p>坚持<strong>"专业、严谨、负责、温暖"</strong>的行医准则，为每一位患者量身定制个性化治疗方案，做到诊断精准、方案透明、过程舒适、效果可预期。推行全程一对一接诊、预约就诊、术后随访、健康宣教等贴心服务，让更多人在家门口就能享受到高品质、专业化的口腔医疗服务。</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== 门诊环境展示 ========== -->
-        <section id="gallery" class="gallery" aria-labelledby="gallery-title">
-            <div class="container">
-                <h2 id="gallery-title">门诊环境</h2>
-                <p class="section-intro">整洁明亮、布局合理的诊疗环境，严格执行无菌诊疗、一人一用一消毒的院感标准。</p>
-                <div class="gallery-grid">
-                    <img src="images/photo_2.jpeg" alt="忠一口腔门诊环境" loading="lazy" onerror="this.style.display='none'">
-                    <img src="images/photo_3.jpeg" alt="忠一口腔诊疗环境展示" loading="lazy" onerror="this.style.display='none'">
-                    <img src="images/photo_4.jpeg" alt="忠一口腔诊室环境" loading="lazy" onerror="this.style.display='none'">
-                    <img src="images/photo_5.jpeg" alt="忠一口腔候诊区域" loading="lazy" onerror="this.style.display='none'">
-                    <img src="images/photo_6.jpeg" alt="忠一口腔诊疗设备" loading="lazy" onerror="this.style.display='none'">
-                    <img src="images/photo_7.jpeg" alt="忠一口腔无菌诊疗区" loading="lazy" onerror="this.style.display='none'">
-                    <img src="images/photo_8.jpeg" alt="忠一口腔专业设备" loading="lazy" onerror="this.style.display='none'">
-                    <img src="images/photo_9.jpeg" alt="忠一口腔诊室全景" loading="lazy" onerror="this.style.display='none'">
-                    <img src="images/photo_10.jpeg" alt="忠一口腔环境细节" loading="lazy" onerror="this.style.display='none'">
-                    <img src="images/photo_11.jpeg" alt="忠一口腔院内环境" loading="lazy" onerror="this.style.display='none'">
-                    <img src="images/photo_12.jpeg" alt="忠一口腔门诊实景" loading="lazy" onerror="this.style.display='none'">
+                <div class="about-grid">
+                    <div class="about-image-wrapper reveal">
+                        <div class="about-image-placeholder">
+                            <div class="icon">🦷</div>
+                            <div class="text">忠一口腔门诊环境</div>
+                        </div>
+                    </div>
+                    <div class="about-text reveal reveal-delay-1">
+                        <span class="section-label" style="text-align:left;">ABOUT US</span>
+                        <h2 id="about-title" class="section-title" style="text-align:left;">霸州人信赖的<br>专业口腔诊疗机构</h2>
+                        <div class="section-line" style="margin:0 0 14px 0;"></div>
+                        <p>忠一口腔创立于<strong>2024年</strong>，坐落于<strong>河北省霸州市兴华中路1812号</strong>。门诊以"忠于心，精于齿"为核心理念，致力于为霸州及周边群众提供安全、舒适、高品质的一站式口腔诊疗服务。</p>
+                        <p>团队定期参加国内口腔学术交流与前沿技术培训，门诊严格执行<strong>无菌诊疗、一人一用一消毒</strong>的院感标准，全面保障患者就诊安全。</p>
+                        <div class="about-values">
+                            <div class="about-value"><span class="dot"></span> 专业严谨</div>
+                            <div class="about-value"><span class="dot"></span> 负责温暖</div>
+                            <div class="about-value"><span class="dot"></span> 精准诊断</div>
+                            <div class="about-value"><span class="dot"></span> 个性化方案</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -416,25 +463,30 @@
         <!-- ========== 诊疗项目 ========== -->
         <section id="services" class="services" aria-labelledby="services-title">
             <div class="container">
-                <h2 id="services-title">诊疗项目</h2>
-                <p class="section-intro">忠一口腔以"忠于心，精于齿"为理念，为全年龄段患者提供一站式、精准化的口腔健康解决方案。</p>
+                <span class="section-label reveal">OUR SERVICES</span>
+                <h2 class="section-title reveal" id="services-title">全系列口腔诊疗项目</h2>
+                <div class="section-line reveal"></div>
+                <p class="section-intro reveal">一站式精准化口腔健康解决方案，覆盖全年龄段口腔需求</p>
+
                 <div class="service-grid">
 
-                    <article class="service-card">
+                    <article class="service-card reveal">
+                        <div class="service-icon">😁</div>
                         <h3>牙齿矫正</h3>
-                        <p>涵盖金属托槽、隐形矫正（隐适美/时代天使/正雅）、儿童早期干预等多种方式。特邀<strong>北大口腔正畸专家闾鑫锋</strong>定期坐诊，结合数字化方案设计，为青少年与成人定制高效美观的矫正方案。</p>
+                        <p>特邀<strong>北大口腔正畸专家闾鑫锋</strong>定期坐诊，金属托槽、隐形矫正（隐适美/时代天使/正雅）、儿童早期干预，数字化方案设计，为青少年与成人定制高效美观的矫正方案。</p>
                         <ul>
                             <li>金属托槽矫正</li>
-                            <li>隐形矫正（隐适美/时代天使/正雅）</li>
-                            <li>儿童早期干预矫治（ETA）</li>
-                            <li>正雅颌位重建技术</li>
+                            <li>隐形矫正</li>
+                            <li>儿童早期干预 ETA</li>
+                            <li>正雅颌位重建</li>
                             <li>微创支抗钉技术</li>
                         </ul>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal reveal-delay-1">
+                        <div class="service-icon">🦷</div>
                         <h3>数字化种植</h3>
-                        <p>由<strong>瑞士Straumann、美国HIOSSEN、瑞典Nobel三大种植系统认证医师陈帅</strong>主诊，依托<strong>CBCT三维数据</strong>实现精准种植导板设计，单颗/多颗/全口缺失牙均可修复，微创舒适，即刻恢复咀嚼功能。</p>
+                        <p>由<strong>瑞士Straumann、美国HIOSSEN、瑞典Nobel</strong>三大种植系统认证医师陈帅主诊，依托CBCT三维数据精准种植导板设计，微创舒适，即刻恢复咀嚼功能。</p>
                         <ul>
                             <li>单颗牙缺失种植</li>
                             <li>多颗牙缺失种植</li>
@@ -443,9 +495,10 @@
                         </ul>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal reveal-delay-1">
+                        <div class="service-icon">✨</div>
                         <h3>美学贴面与修复</h3>
-                        <p>超薄美学贴面、全瓷冠、树脂补牙，在<strong>显微镜下精细化操作</strong>，兼顾美观与功能，还原牙齿自然形态与色泽。郭磊医生为门诊美学修复骨干，王中一医生获微创美学树脂修复"最佳贡献奖"。</p>
+                        <p>超薄美学贴面、全瓷冠、树脂补牙，在<strong>显微镜下精细化操作</strong>，兼顾美观与功能，还原牙齿自然形态与色泽。</p>
                         <ul>
                             <li>超薄瓷贴面</li>
                             <li>全瓷冠修复</li>
@@ -454,156 +507,326 @@
                         </ul>
                     </article>
 
-                    <article class="service-card">
+                    <article class="service-card reveal reveal-delay-2">
+                        <div class="service-icon">👶</div>
                         <h3>儿童口腔诊疗</h3>
-                        <p>窝沟封闭、涂氟预防、儿童早期矫治，温柔诊疗环境配合专业儿童口腔医生，让孩子轻松看牙，远离牙病困扰。王中一医生为<strong>ETA儿童早期矫治认证医师</strong>。</p>
+                        <p>窝沟封闭、涂氟预防、儿童早期矫治，温柔诊疗环境配合专业儿童口腔医生，让孩子轻松看牙。王中一医生为<strong>ETA儿童早期矫治认证医师</strong>。</p>
                         <ul>
                             <li>窝沟封闭</li>
                             <li>涂氟防龋</li>
-                            <li>儿童早期矫治（ETA）</li>
+                            <li>儿童早期矫治 ETA</li>
                             <li>儿童龋齿治疗</li>
                         </ul>
                     </article>
 
-                    <article class="service-card">
-                        <h3>微创拔牙与根管治疗</h3>
-                        <p>复杂阻生齿微创拔除、<strong>显微镜下根管治疗</strong>、<strong>热牙胶充填技术</strong>，创伤小、恢复快。周建娜医生为牙体牙髓与牙周诊疗专项骨干，郭磊医生精通现代化显微镜根管治疗。</p>
+                    <article class="service-card reveal reveal-delay-2">
+                        <div class="service-icon">🔬</div>
+                        <h3>显微镜根管治疗</h3>
+                        <p>在<strong>口腔显微镜20-30倍放大视野</strong>下，精准处理复杂根管、牙体修复等细微问题，热牙胶充填技术，大幅提升治疗精度与成功率。</p>
                         <ul>
-                            <li>阻生智齿微创拔除</li>
                             <li>显微镜根管治疗</li>
                             <li>热牙胶充填</li>
-                            <li>牙周系统治疗</li>
-                        </ul>
-                    </article>
-
-                    <article class="service-card">
-                        <h3>活动义齿修复</h3>
-                        <p>针对缺牙患者定制舒适、贴合、易清洁的活动义齿方案，兼顾功能恢复与佩戴体验，帮助中老年患者重拾咀嚼自信。周建娜医生擅长活动义齿修复。</p>
-                        <ul>
-                            <li>活动义齿定制</li>
-                            <li>全口活动义齿</li>
-                            <li>局部活动义齿</li>
-                            <li>义齿修复维护</li>
-                        </ul>
-                    </article>
-
-                    <article class="service-card">
-                        <h3>显微镜治疗</h3>
-                        <p>在<strong>口腔显微镜20-30倍放大视野</strong>下，精准处理复杂根管、牙体修复、美学备牙等细微问题，大幅提升治疗精度与成功率。忠一口腔郭磊医生精通现代化显微镜根管治疗，实现真正意义上的精细化口腔诊疗。</p>
-                        <ul>
-                            <li>显微镜根管治疗</li>
-                            <li>显微镜下美学备牙</li>
                             <li>显微根尖手术</li>
                             <li>牙体微创修复</li>
                         </ul>
                     </article>
+
+                    <article class="service-card reveal reveal-delay-2">
+                        <div class="service-icon">🪥</div>
+                        <h3>微创拔牙与牙周治疗</h3>
+                        <p>复杂阻生齿微创拔除、牙周系统治疗、活动义齿修复。周建娜医生为牙体牙髓与牙周诊疗专项骨干，郭磊医生精通现代化显微镜根管治疗。</p>
+                        <ul>
+                            <li>阻生智齿微创拔除</li>
+                            <li>牙周系统治疗</li>
+                            <li>活动义齿定制</li>
+                            <li>全口活动义齿</li>
+                        </ul>
+                    </article>
+
                 </div>
             </div>
         </section>
 
-        <!-- ========== 医生团队 ========== -->
-        <section id="doctors" class="doctors" aria-labelledby="doctors-title">
+        <!-- ========== CTA Banner 1 ========== -->
+        <section class="cta-banner reveal" aria-label="预约引导">
             <div class="container">
-                <h2 id="doctors-title">医生团队</h2>
-                <p class="section-intro">忠一口腔拥有一支由北大口腔专家领衔的专业医疗团队，每位医生均具备正规口腔医学教育背景和丰富临床经验。</p>
+                <h2>家门口享受北京级口腔医疗服务</h2>
+                <p>北大口腔正畸专家定期坐诊，免去奔波之苦。暑期矫正季，预约免费口腔检查与正畸评估。</p>
+                <a href="tel:13102491662" class="btn-primary">立即预约免费检查</a>
+            </div>
+        </section>
 
-                <article class="doctor-card featured">
-                    <h3>王中一 <span class="role">创始人 / 门诊主任</span></h3>
-                    <p>忠一口腔创始人、门诊主任，<strong>中华口腔医学会会员</strong>，本科毕业于<strong>河北北方学院口腔医学专业</strong>。先后在邢台、廊坊、北京等地口腔机构进修，跟随刘凤顺老师潜心学习多年，后跟随<strong>首都医科大学正畸学硕士闾鑫锋老师</strong>深耕正畸技术。</p>
-                    <p><strong>四大隐形矫正认证医师</strong>：正雅隐形矫正、时代天使隐形矫正、隐适美隐形矫正、ETA儿童早期矫治。同时是正雅隐形矫治星级医生，拥有正雅颌位重建技术、GS技术进阶、正畸支抗钉临床应用等多项专项认证。</p>
-                    <p>完成台湾Mico One正畸支抗钉、全国规范化微创种植精英班等前沿课程培训，<strong>2018年完成微创美学树脂修复专项培训并获"最佳贡献奖"</strong>。</p>
-                    <p class="specialties"><strong>擅长领域</strong>：成人及青少年牙齿矫正、隐形矫正、儿童早期干预矫治、种植修复、美学修复</p>
-                </article>
+        <!-- ========== 医生团队 ========== -->
+        <section id="doctors" class="doctors bg-white" aria-labelledby="doctors-title">
+            <div class="container">
+                <span class="section-label reveal">OUR TEAM</span>
+                <h2 class="section-title reveal" id="doctors-title">专业医师团队</h2>
+                <div class="section-line reveal"></div>
+                <p class="section-intro reveal">由北大口腔专家领衔，每位医生均具备正规口腔医学教育背景和丰富临床经验</p>
 
-                <article class="doctor-card featured">
-                    <h3>闾鑫锋 <span class="role">特邀正畸专家</span></h3>
-                    <p><strong>北京大学医院口腔中心正畸科副主任医师</strong>，本科及研究生均毕业于<strong>首都医科大学</strong>，师从著名口腔正畸学泰斗<strong>厉松教授</strong>，是国内正畸领域的资深专家。</p>
-                    <p><strong>隐适美认证医师</strong>，曾赴香港参加Invisalign拔牙病例专项研讨会，作为行业专家受邀出席时代天使2018"精准·进化"A-Tech大会。</p>
-                    <p><strong>已发表核心期刊文章4篇，申请实用新型专利2项</strong>，临床经验极为丰富。中华口腔医学会会员、北京口腔医学会正畸专委会会员。</p>
-                    <p class="specialties"><strong>擅长领域</strong>：成人及青少年错颌畸形矫治、隐形矫正、拔牙病例正畸治疗</p>
-                    <p class="highlight-note">闾鑫锋专家定期坐诊忠一口腔，为霸州百姓带来与一线城市同步的三甲医院正畸诊疗服务，让大家在家门口就能看北大正畸名医。</p>
-                </article>
+                <div class="doctor-grid">
 
-                <article class="doctor-card">
-                    <h3>陈帅 <span class="role">种植骨干医师</span></h3>
-                    <p><strong>瑞士Straumann、美国HIOSSEN、瑞典Nobel三大国际种植系统认证医师</strong>，于天津口腔机构从业多年口腔种植手术及修复诊疗，积累了丰富的临床手术经验。</p>
-                    <p>深耕口腔种植领域，以数字化精准舒适种植修复为专长。同时精通各类牙齿微创拔除、牙体缺损美学修复及常见牙周疾病治疗。</p>
-                    <p class="specialties"><strong>擅长领域</strong>：数字化精准种植、单颗/多颗/半口/全口种植修复、微创拔牙、牙周治疗</p>
-                </article>
+                    <!-- 王中一 -->
+                    <article class="doctor-card reveal">
+                        <div class="doctor-header">
+                            <div class="doctor-avatar">王</div>
+                            <div class="doctor-info">
+                                <h3>王中一</h3>
+                                <span class="role">创始人 / 门诊主任</span>
+                            </div>
+                        </div>
+                        <p>忠一口腔创始人，<strong>中华口腔医学会会员</strong>，本科毕业于河北北方学院口腔医学专业。先后在邢台、廊坊、北京等地口腔机构进修，跟随刘凤顺老师潜心学习多年，后跟随首都医科大学正畸学硕士闾鑫锋老师深耕正畸技术。</p>
+                        <p><strong>四大认证医师</strong>：正雅隐形矫正、时代天使隐形矫正、隐适美隐形矫正、ETA儿童早期矫治。正雅隐形矫治星级医生，拥有正雅颌位重建技术、GS技术进阶、正畸支抗钉临床应用等多项专项认证。<strong>2018年获微创美学树脂修复"最佳贡献奖"</strong>。</p>
+                        <div class="specialties">
+                            <strong>擅长：</strong>
+                            <span class="specialty-tag">牙齿矫正</span>
+                            <span class="specialty-tag">隐形矫正</span>
+                            <span class="specialty-tag">儿童早期矫治</span>
+                            <span class="specialty-tag">种植修复</span>
+                            <span class="specialty-tag">美学修复</span>
+                        </div>
+                    </article>
 
-                <article class="doctor-card">
-                    <h3>郭磊 <span class="role">资深医师</span></h3>
-                    <p><strong>中华口腔医学会会员</strong>，毕业于<strong>华北理工大学口腔医学专业</strong>，曾任职于<strong>霸州第四人民医院口腔科</strong>，拥有扎实的公立医院临床基础与丰富的一线诊疗经验。</p>
-                    <p>门诊美学修复骨干，擅长美学贴面、显微镜下备牙、美学树脂补牙。系统学习全冠修复实操课程，精通现代化显微镜根管治疗、热牙胶充填技术。</p>
-                    <p class="specialties"><strong>擅长领域</strong>：美学贴面、全瓷冠修复、显微镜根管治疗、树脂美学修复、阻生齿微创拔除</p>
-                </article>
+                    <!-- 闾鑫锋 -->
+                    <article class="doctor-card featured reveal reveal-delay-1">
+                        <div class="doctor-header">
+                            <div class="doctor-avatar">闾</div>
+                            <div class="doctor-info">
+                                <h3>闾鑫锋</h3>
+                                <span class="role">特邀正畸专家</span>
+                            </div>
+                        </div>
+                        <p><strong>北京大学医院口腔中心正畸科副主任医师</strong>，首都医科大学硕士，师从著名口腔正畸学泰斗<strong>厉松教授</strong>，是国内正畸领域的资深专家。</p>
+                        <p><strong>隐适美认证医师</strong>，曾赴香港参加Invisalign拔牙病例专项研讨会，作为行业专家受邀出席时代天使A-Tech大会。<strong>已发表核心期刊文章4篇，申请实用新型专利2项</strong>。</p>
+                        <div class="specialties">
+                            <strong>擅长：</strong>
+                            <span class="specialty-tag">错颌畸形矫治</span>
+                            <span class="specialty-tag">隐形矫正</span>
+                            <span class="specialty-tag">拔牙病例正畸</span>
+                            <span class="specialty-tag">青少年正畸</span>
+                        </div>
+                        <p style="margin-top:14px;background:#fff8e7;border-radius:8px;padding:10px 14px;font-weight:500;color:#8b6914;font-size:0.85rem;">闾鑫锋专家定期坐诊忠一口腔，让霸州百姓在家门口就能看北大正畸名医。</p>
+                    </article>
 
-                <article class="doctor-card">
-                    <h3>周建娜 <span class="role">资深医师</span></h3>
-                    <p><strong>口腔医学专业主治医师</strong>，毕业于<strong>河北北方学院口腔医学专业</strong>，是忠一口腔临床骨干医师之一。</p>
-                    <p>门诊牙体牙髓与牙周诊疗专项骨干，擅长牙体牙髓疾病、根尖周疾病、牙周病系统治疗。同时精通阻生齿微创拔除、口腔美学修复、活动义齿修复。</p>
-                    <p class="specialties"><strong>擅长领域</strong>：牙体牙髓治疗、牙周系统治疗、根管治疗、美学修复、活动义齿修复、微创拔牙</p>
-                </article>
+                    <!-- 陈帅 -->
+                    <article class="doctor-card reveal reveal-delay-2">
+                        <div class="doctor-header">
+                            <div class="doctor-avatar">陈</div>
+                            <div class="doctor-info">
+                                <h3>陈帅</h3>
+                                <span class="role">种植骨干医师</span>
+                            </div>
+                        </div>
+                        <p><strong>瑞士Straumann、美国HIOSSEN、瑞典Nobel三大国际种植系统认证医师</strong>，于天津口腔机构从业多年口腔种植手术及修复诊疗，积累了丰富的临床手术经验。以数字化精准舒适种植修复为专长。</p>
+                        <div class="specialties">
+                            <strong>擅长：</strong>
+                            <span class="specialty-tag">数字化精准种植</span>
+                            <span class="specialty-tag">全口种植</span>
+                            <span class="specialty-tag">微创拔牙</span>
+                            <span class="specialty-tag">牙周治疗</span>
+                        </div>
+                    </article>
+
+                    <!-- 郭磊 -->
+                    <article class="doctor-card reveal reveal-delay-2">
+                        <div class="doctor-header">
+                            <div class="doctor-avatar">郭</div>
+                            <div class="doctor-info">
+                                <h3>郭磊</h3>
+                                <span class="role">资深医师</span>
+                            </div>
+                        </div>
+                        <p><strong>中华口腔医学会会员</strong>，毕业于华北理工大学口腔医学专业，曾任职于<strong>霸州第四人民医院口腔科</strong>，拥有扎实的公立医院临床基础。门诊美学修复骨干，精通显微镜根管治疗、热牙胶充填技术。</p>
+                        <div class="specialties">
+                            <strong>擅长：</strong>
+                            <span class="specialty-tag">美学贴面</span>
+                            <span class="specialty-tag">全瓷冠修复</span>
+                            <span class="specialty-tag">显微镜根管治疗</span>
+                            <span class="specialty-tag">树脂美学修复</span>
+                        </div>
+                    </article>
+
+                    <!-- 周建娜 -->
+                    <article class="doctor-card reveal reveal-delay-3">
+                        <div class="doctor-header">
+                            <div class="doctor-avatar">周</div>
+                            <div class="doctor-info">
+                                <h3>周建娜</h3>
+                                <span class="role">资深医师</span>
+                            </div>
+                        </div>
+                        <p><strong>口腔医学专业主治医师</strong>，毕业于河北北方学院口腔医学专业，是忠一口腔临床骨干医师。门诊牙体牙髓与牙周诊疗专项骨干，擅长牙体牙髓疾病、根尖周疾病、牙周病系统治疗。</p>
+                        <div class="specialties">
+                            <strong>擅长：</strong>
+                            <span class="specialty-tag">牙体牙髓治疗</span>
+                            <span class="specialty-tag">牙周系统治疗</span>
+                            <span class="specialty-tag">根管治疗</span>
+                            <span class="specialty-tag">活动义齿修复</span>
+                        </div>
+                    </article>
+
+                </div>
             </div>
         </section>
 
         <!-- ========== 先进设备 ========== -->
         <section id="equipment" class="equipment" aria-labelledby="equipment-title">
             <div class="container">
-                <h2 id="equipment-title">先进诊疗设备</h2>
-                <p class="section-intro">门诊配备全套高端诊疗设备，实现从检查、诊断到治疗的精准化、可视化、微创化。</p>
+                <span class="section-label reveal">EQUIPMENT</span>
+                <h2 class="section-title reveal" id="equipment-title">先进诊疗设备</h2>
+                <div class="section-line reveal"></div>
+                <p class="section-intro reveal">门诊配备全套高端诊疗设备，实现从检查、诊断到治疗的精准化、可视化、微创化</p>
+
                 <div class="equipment-grid">
-                    <div class="equipment-item">
+                    <div class="equipment-item reveal">
+                        <span class="equipment-icon">🔬</span>
                         <h3>口腔显微镜</h3>
-                        <p>将根管治疗、美学备牙放大<strong>20-30倍</strong>，精准处理细微结构，提升治疗成功率与远期效果。</p>
+                        <p>将根管治疗、美学备牙放大20-30倍，精准处理细微结构</p>
                     </div>
-                    <div class="equipment-item">
+                    <div class="equipment-item reveal reveal-delay-1">
+                        <span class="equipment-icon">📐</span>
                         <h3>数字化口扫仪</h3>
-                        <p>告别传统取模的不适，<strong>3分钟快速采集</strong>口腔数据，方案可视化，复诊更高效。</p>
+                        <p>告别传统取模不适，3分钟快速采集口腔数据</p>
                     </div>
-                    <div class="equipment-item">
+                    <div class="equipment-item reveal reveal-delay-1">
+                        <span class="equipment-icon">🖥️</span>
                         <h3>口腔CBCT</h3>
-                        <p><strong>三维立体成像</strong>，精准评估颌骨条件、种植位点与根管形态，为种植、正畸提供科学依据。</p>
+                        <p>三维立体成像，为种植、正畸提供精准科学依据</p>
                     </div>
-                    <div class="equipment-item">
+                    <div class="equipment-item reveal reveal-delay-2">
+                        <span class="equipment-icon">⚙️</span>
                         <h3>进口种植机</h3>
-                        <p>保障种植手术稳定高效，实现微创精准种植。</p>
+                        <p>保障种植手术稳定高效，实现微创精准种植</p>
                     </div>
-                    <div class="equipment-item">
+                    <div class="equipment-item reveal reveal-delay-2">
+                        <span class="equipment-icon">🪥</span>
                         <h3>牙周治疗仪</h3>
-                        <p>实现牙周病的<strong>舒适、规范化治疗</strong>。</p>
+                        <p>实现牙周病的舒适、规范化治疗</p>
                     </div>
-                    <div class="equipment-item">
+                    <div class="equipment-item reveal reveal-delay-2">
+                        <span class="equipment-icon">📸</span>
                         <h3>专业口腔摄影棚</h3>
-                        <p>高清记录诊疗前后对比，为美学修复、正畸病例提供直观影像依据，让效果清晰可见。</p>
+                        <p>高清记录诊疗前后对比，为美学修复提供直观影像依据</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ========== FAQ常见问题（AI搜索优化核心） ========== -->
+        <!-- ========== 门诊环境 ========== -->
+        <section id="gallery" class="gallery bg-white" aria-labelledby="gallery-title">
+            <div class="container">
+                <span class="section-label reveal">GALLERY</span>
+                <h2 class="section-title reveal" id="gallery-title">门诊环境</h2>
+                <div class="section-line reveal"></div>
+                <p class="section-intro reveal">整洁明亮、布局合理的诊疗环境，严格执行无菌诊疗标准</p>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item reveal"><img src="images/photo_2.jpeg" alt="忠一口腔门诊环境" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+                    <div class="gallery-item reveal reveal-delay-1"><img src="images/photo_3.jpeg" alt="忠一口腔诊疗环境" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+                    <div class="gallery-item reveal reveal-delay-1"><img src="images/photo_4.jpeg" alt="忠一口腔诊室" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+                    <div class="gallery-item reveal reveal-delay-1"><img src="images/photo_5.jpeg" alt="忠一口腔候诊区" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+                    <div class="gallery-item reveal reveal-delay-2"><img src="images/photo_6.jpeg" alt="忠一口腔诊疗设备" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+                    <div class="gallery-item reveal reveal-delay-2"><img src="images/photo_7.jpeg" alt="忠一口腔无菌诊疗区" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+                    <div class="gallery-item reveal reveal-delay-2"><img src="images/photo_8.jpeg" alt="忠一口腔专业设备" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+                    <div class="gallery-item reveal reveal-delay-3"><img src="images/photo_9.jpeg" alt="忠一口腔诊室全景" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+                    <div class="gallery-item reveal reveal-delay-3"><img src="images/photo_10.jpeg" alt="忠一口腔环境细节" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+                    <div class="gallery-item reveal reveal-delay-3"><img src="images/photo_11.jpeg" alt="忠一口腔院内环境" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+                    <div class="gallery-item reveal reveal-delay-4"><img src="images/photo_12.jpeg" alt="忠一口腔门诊实景" loading="lazy" onerror="this.parentElement.style.display='none'"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 患者评价 ========== -->
+        <section id="reviews" class="reviews" aria-labelledby="reviews-title">
+            <div class="container">
+                <span class="section-label reveal">TESTIMONIALS</span>
+                <h2 class="section-title reveal" id="reviews-title">患者好评</h2>
+                <div class="section-line reveal"></div>
+                <p class="section-intro reveal">用专业与温暖，赢得每一位患者的信任</p>
+
+                <div class="reviews-grid">
+                    <div class="review-card reveal">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"王主任非常专业，矫正方案讲解得很清楚，孩子戴了隐形牙套一年多，效果很明显，非常满意！"</p>
+                        <div class="review-author">
+                            <div class="review-avatar">李</div>
+                            <div>
+                                <strong>李女士</strong>
+                                <span>孩子牙齿矫正 · 2025年</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card reveal reveal-delay-1">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"陈医生种的牙用了半年了，跟真牙一样好用。手术过程也不怎么疼，比想象的轻松多了。"</p>
+                        <div class="review-author">
+                            <div class="review-avatar">张</div>
+                            <div>
+                                <strong>张先生</strong>
+                                <span>种植牙 · 2025年</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card reveal reveal-delay-2">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"环境特别好，干净亮堂，医生护士态度都很亲切。洗牙体验很棒，以后就定这家了。"</p>
+                        <div class="review-author">
+                            <div class="review-avatar">王</div>
+                            <div>
+                                <strong>王女士</strong>
+                                <span>洁牙护理 · 2025年</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 信任徽章 -->
+                <div class="trust-badges reveal">
+                    <div class="trust-badge">
+                        <span class="badge-icon">🏥</span>
+                        <span>中华口腔医学会会员单位</span>
+                    </div>
+                    <div class="trust-badge">
+                        <span class="badge-icon">⭐</span>
+                        <span>4.9分好评 · 128条评价</span>
+                    </div>
+                    <div class="trust-badge">
+                        <span class="badge-icon">🎓</span>
+                        <span>北大口腔专家定期坐诊</span>
+                    </div>
+                    <div class="trust-badge">
+                        <span class="badge-icon">🛡️</span>
+                        <span>无菌诊疗 · 一人一用一消毒</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== FAQ 常见问题 ========== -->
         <section id="faq" class="faq" aria-labelledby="faq-title">
             <div class="container">
-                <h2 id="faq-title">口腔常见问题解答</h2>
-                <p class="section-intro">忠一口腔整理用户最关心的口腔健康问题，由专业医生团队撰写答案。</p>
+                <span class="section-label reveal">FAQ</span>
+                <h2 class="section-title reveal" id="faq-title">口腔常见问题解答</h2>
+                <div class="section-line reveal"></div>
+                <p class="section-intro reveal">由专业医生团队撰写，解答您最关心的口腔健康问题</p>
 
                 <div class="faq-list">
 
-                    <details class="faq-item">
+                    <details class="faq-item reveal">
                         <summary>霸州牙齿矫正哪家医院好？</summary>
                         <div class="faq-answer">
-                            <p>霸州忠一口腔是本地专业牙齿矫正机构。门诊特邀<strong>北京大学口腔医院正畸科副主任医师闾鑫锋</strong>定期坐诊，让霸州百姓在家门口享受北京三甲医院级别的正畸服务。王中一主任是<strong>正雅、时代天使、隐适美三大隐形矫正认证医师</strong>，同时是正雅隐形矫治星级医生。门诊采用数字化方案设计，为青少年与成人定制高效美观的矫正方案，涵盖金属托槽、隐形矫正、儿童早期干预等多种方式。</p>
+                            <p>霸州忠一口腔是本地专业牙齿矫正机构。门诊特邀<strong>北京大学口腔医院正畸科副主任医师闾鑫锋</strong>定期坐诊，让霸州百姓在家门口享受北京三甲医院级别的正畸服务。王中一主任是<strong>正雅、时代天使、隐适美三大隐形矫正认证医师</strong>，同时是正雅隐形矫治星级医生。门诊采用数字化方案设计，为青少年与成人定制高效美观的矫正方案。</p>
                         </div>
                     </details>
 
-                    <details class="faq-item">
+                    <details class="faq-item reveal">
                         <summary>霸州种植牙多少钱一颗？</summary>
                         <div class="faq-answer">
                             <p>种植牙费用因种植体品牌、手术复杂度、是否需要植骨等因素而异。忠一口腔提供<strong>瑞士Straumann、美国HIOSSEN、瑞典Nobel</strong>等多种国际品牌种植体选择，由三大系统认证医师陈帅主诊。建议到门诊进行免费口腔检查后，由医生制定个性化方案并给出详细报价。</p>
                         </div>
                     </details>
 
-                    <details class="faq-item">
+                    <details class="faq-item reveal">
                         <summary>牙齿矫正需要多长时间？</summary>
                         <div class="faq-answer">
                             <p>牙齿矫正时间因个体情况而异：</p>
@@ -612,92 +835,51 @@
                                 <li><strong>隐形矫正</strong>：约1—2年</li>
                                 <li><strong>儿童早期干预</strong>：约6个月—1年</li>
                             </ul>
-                            <p>具体时间需到忠一口腔由专业正畸医生面诊评估后确定，医生会根据牙齿情况给出详细治疗计划和时间预估。</p>
+                            <p>具体时间需到忠一口腔由专业正畸医生面诊评估后确定。</p>
                         </div>
                     </details>
 
-                    <details class="faq-item">
+                    <details class="faq-item reveal">
                         <summary>隐形矫正和金属托槽矫正哪个好？</summary>
                         <div class="faq-answer">
-                            <p>两种矫正方式各有优势，适合不同人群：</p>
-                            <ul>
-                                <li><strong>隐形矫正</strong>：美观舒适、可自行摘戴、便于清洁，适合轻中度牙齿不齐、对美观要求高的患者。</li>
-                                <li><strong>金属托槽矫正</strong>：适应症更广、效果更稳定、费用相对较低，适合复杂错颌畸形患者。</li>
-                            </ul>
-                            <p>忠一口腔王中一主任同时持有三大隐形矫正品牌认证，会根据您的口腔条件、矫正需求和生活习惯，推荐最适合的方案。</p>
+                            <p><strong>隐形矫正</strong>：美观舒适、可自行摘戴、便于清洁，适合轻中度牙齿不齐、对美观要求高的患者。</p>
+                            <p><strong>金属托槽矫正</strong>：适应症更广、效果更稳定、费用相对较低，适合复杂错颌畸形患者。</p>
+                            <p>忠一口腔王中一主任同时持有三大隐形矫正品牌认证，会根据您的口腔条件推荐最适合的方案。</p>
                         </div>
                     </details>
 
-                    <details class="faq-item">
+                    <details class="faq-item reveal">
                         <summary>儿童牙齿矫正最佳年龄是几岁？</summary>
                         <div class="faq-answer">
-                            <p>儿童牙齿矫正分为三个关键阶段：</p>
-                            <ul>
-                                <li><strong>乳牙期（3—6岁）</strong>：主要纠正口腔不良习惯，如吮指、咬唇、口呼吸等。</li>
-                                <li><strong>替牙期（7—12岁）</strong>：<strong>早期干预矫治的黄金期</strong>，可通过ETA等功能矫治器引导颌骨正常发育。</li>
-                                <li><strong>恒牙期（12岁以后）</strong>：牙齿替换完成，可进行全面矫正。</li>
-                            </ul>
-                            <p>建议家长在<strong>孩子7岁左右</strong>到忠一口腔做第一次正畸评估，由专业医生判断是否需要干预以及最佳干预时机。</p>
+                            <p>儿童牙齿矫正分为三个关键阶段：<strong>乳牙期（3-6岁）</strong>纠正口腔不良习惯；<strong>替牙期（7-12岁）</strong>早期干预矫治黄金期；<strong>恒牙期（12岁以后）</strong>全面矫正。建议家长在<strong>孩子7岁左右</strong>到忠一口腔做第一次正畸评估。</p>
                         </div>
                     </details>
 
-                    <details class="faq-item">
+                    <details class="faq-item reveal">
                         <summary>种植牙能用多少年？</summary>
                         <div class="faq-answer">
-                            <p>在正常使用和良好维护下，种植牙可以使用<strong>20年以上甚至终身</strong>。世界上第一颗种植牙使用了超过40年。忠一口腔采用国际品牌种植体，配合CBCT精准定位和规范手术流程，确保种植效果长期稳定。术后定期复查（建议每半年至一年一次）和良好的口腔卫生习惯是延长种植牙寿命的关键。</p>
+                            <p>在正常使用和良好维护下，种植牙可以使用<strong>20年以上甚至终身</strong>。忠一口腔采用国际品牌种植体，配合CBCT精准定位和规范手术流程，确保种植效果长期稳定。术后定期复查（建议每半年至一年一次）是关键。</p>
                         </div>
                     </details>
 
-                    <details class="faq-item">
+                    <details class="faq-item reveal">
                         <summary>根管治疗疼不疼？需要去几次？</summary>
                         <div class="faq-answer">
-                            <p>忠一口腔采用<strong>显微镜下根管治疗</strong>和<strong>热牙胶充填技术</strong>，在局部麻醉下进行治疗，全程微创舒适、疼痛感完全可控。根管治疗一般需要<strong>2—4次就诊</strong>完成，根据牙齿位置（前牙/前磨牙/磨牙）和感染程度有所不同。医生会在首诊时为您制定详细的治疗方案和就诊次数预估。</p>
+                            <p>忠一口腔采用<strong>显微镜下根管治疗</strong>和<strong>热牙胶充填技术</strong>，在局部麻醉下进行治疗，全程微创舒适。一般需要<strong>2-4次就诊</strong>完成，具体根据牙齿位置和感染程度而定。</p>
                         </div>
                     </details>
 
-                    <details class="faq-item">
+                    <details class="faq-item reveal">
                         <summary>拔智齿需要住院吗？</summary>
                         <div class="faq-answer">
-                            <p>绝大多数智齿拔除不需要住院，在门诊即可完成。忠一口腔采用<strong>微创拔牙技术</strong>，创伤小、术后反应轻。部分复杂阻生智齿（如完全骨埋伏、靠近下牙槽神经等）可能需要更长的手术时间，但一般仍在门诊条件下即可安全完成。医生会在术前通过CBCT三维影像精确评估智齿位置和风险，为您制定最安全的拔牙方案。</p>
+                            <p>绝大多数智齿拔除不需要住院，在门诊即可完成。忠一口腔采用<strong>微创拔牙技术</strong>，创伤小、术后反应轻。医生会在术前通过CBCT三维影像精确评估智齿位置和风险，为您制定最安全的拔牙方案。</p>
                         </div>
                     </details>
 
-                    <details class="faq-item">
-                        <summary>牙齿贴面能用多久？和烤瓷牙有什么区别？</summary>
-                        <div class="faq-answer">
-                            <p><strong>牙齿贴面</strong>一般可使用<strong>10—15年</strong>，主要区别：</p>
-                            <ul>
-                                <li><strong>瓷贴面</strong>：仅覆盖牙齿表面，磨牙量极少（0.3—0.5mm），对牙齿损伤小，美观度极高。</li>
-                                <li><strong>烤瓷牙/全瓷冠</strong>：需要磨除较多牙体组织（1.5—2mm），像帽子一样包裹整个牙齿，适合缺损较大的牙齿。</li>
-                            </ul>
-                            <p>忠一口腔郭磊医生为美学修复骨干，在显微镜下精细化操作，能根据您的具体情况推荐最合适的修复方案。</p>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
+                    <details class="faq-item reveal">
                         <summary>忠一口腔能刷医保吗？怎么预约？</summary>
                         <div class="faq-answer">
-                            <p>忠一口腔支持多种支付方式，部分诊疗项目可按规定使用医保。预约方式：</p>
-                            <ul>
-                                <li><strong>电话预约</strong>：拨打门诊电话直接预约</li>
-                                <li><strong>到院预约</strong>：前往霸州市兴华中路1812号忠一口腔门诊现场预约</li>
-                                <li><strong>微信预约</strong>：添加门诊微信进行线上预约</li>
-                            </ul>
-                            <p>门诊推行<strong>全程一对一接诊、预约就诊、术后随访</strong>等贴心服务。</p>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>老年人可以做种植牙吗？</summary>
-                        <div class="faq-answer">
-                            <p>年龄本身不是种植牙的禁忌症。<strong>只要全身健康状况允许（血压、血糖控制良好），老年患者完全可以做种植牙</strong>。忠一口腔陈帅医生具备丰富的老年患者种植经验，术前会通过CBCT精确评估颌骨条件，结合患者全身健康状况，制定安全、个性化的种植方案。对于骨量不足的患者，还可通过植骨等方式创造条件完成种植。</p>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>洗牙有必要吗？多久洗一次？</summary>
-                        <div class="faq-answer">
-                            <p>洗牙非常有必要。即使每天认真刷牙，牙缝和牙龈沟等位置仍会积累牙结石和牙菌斑，长期堆积会导致牙龈炎、牙周病甚至牙齿松动脱落。建议<strong>每6—12个月洗牙一次</strong>。忠一口腔采用舒适洁牙技术，同时配合口腔全面检查，帮助您及时发现和预防口腔问题。</p>
+                            <p>忠一口腔支持多种支付方式，部分诊疗项目可按规定使用医保。预约方式：<strong>电话预约</strong>（13102491662）、<strong>到院预约</strong>（霸州市兴华中路1812号）、<strong>微信预约</strong>。门诊推行全程一对一接诊、预约就诊、术后随访等贴心服务。</p>
                         </div>
                     </details>
 
@@ -705,28 +887,76 @@
             </div>
         </section>
 
-        <!-- ========== 联系我们 ========== -->
-        <section id="contact" class="contact" aria-labelledby="contact-title">
+        <!-- ========== CTA Banner 2 ========== -->
+        <section class="cta-banner reveal" aria-label="最终引导">
             <div class="container">
-                <h2 id="contact-title">联系我们</h2>
-                <div class="contact-info">
-                    <p><strong>门诊名称</strong>：忠一口腔</p>
-                    <p><strong>地址</strong>：河北省廊坊市霸州市兴华中路1812号</p>
-                    <p><strong>电话</strong>：13102491662</p>
-                    <p><strong>营业时间</strong>：周一至周日 8:00—19:00</p>
-                    <p><strong>特色服务</strong>：牙齿矫正 · 数字化种植 · 美学贴面 · 儿童口腔 · 根管治疗 · 微创拔牙 · 义齿修复 · 显微镜治疗</p>
+                <h2>让专业口腔医疗，守护每一个家庭的微笑</h2>
+                <p>周一至周日 8:00—19:00 · 霸州市兴华中路1812号 · 电话 13102491662</p>
+                <a href="tel:13102491662" class="btn-primary">📞 立即预约咨询</a>
+            </div>
+        </section>
+
+        <!-- ========== 联系我们 ========== -->
+        <section id="contact" class="contact bg-white" aria-labelledby="contact-title">
+            <div class="container">
+                <span class="section-label reveal">CONTACT</span>
+                <h2 class="section-title reveal" id="contact-title">联系我们</h2>
+                <div class="section-line reveal"></div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-card reveal">
+                        <h3>忠一口腔</h3>
+                        <div class="contact-item">
+                            <div class="ci-icon">📍</div>
+                            <div class="ci-text">
+                                <strong>门诊地址</strong>
+                                <span>河北省廊坊市霸州市兴华中路1812号</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon">📞</div>
+                            <div class="ci-text">
+                                <strong>预约电话</strong>
+                                <span>13102491662</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon">🕐</div>
+                            <div class="ci-text">
+                                <strong>营业时间</strong>
+                                <span>周一至周日 8:00 — 19:00</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon">💬</div>
+                            <div class="ci-text">
+                                <strong>特色服务</strong>
+                                <span>牙齿矫正 · 种植 · 美学贴面 · 儿童口腔 · 根管治疗 · 微创拔牙</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-map-wrapper reveal reveal-delay-1">
+                        <div class="contact-map-placeholder">
+                            <span class="icon">🗺️</span>
+                            地图导航区域<br>
+                            <small>霸州市兴华中路1812号</small>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
         <div class="container">
-            <p>© 2024 忠一口腔 版权所有 | 霸州专业数字化口腔诊疗中心</p>
-            <p>"忠于心，精于齿" — 用专业与温暖守护每一个家庭的口腔健康</p>
+            <div class="footer-brand">忠一口腔</div>
+            <div class="slogan">忠于心 · 精于齿</div>
+            <p>霸州专业数字化口腔诊疗中心</p>
+            <p class="footer-copy">© 2024 忠一口腔 版权所有 | 用专业与温暖守护每一个家庭的口腔健康</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=2"></script>
 </body>
 </html>

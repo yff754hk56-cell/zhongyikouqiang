@@ -5,7 +5,7 @@
 
     <!-- 首页 -->
     <url>
-        <loc>https://www.zhongyikouqiang.com/</loc>
+        <loc>https://www.zhoongyikouqiang.com/</loc>
         <lastmod>2026-05-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -14,7 +14,7 @@
 
     <!-- FAQ页面 -->
     <url>
-        <loc>https://www.zhongyikouqiang.com/faq.html</loc>
+        <loc>https://www.zhoongyikouqiang.com/faq.html</loc>
         <lastmod>2026-05-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
@@ -23,7 +23,7 @@
 
     <!-- 牙齿矫正专题页 -->
     <url>
-        <loc>https://www.zhongyikouqiang.com/orthodontics.html</loc>
+        <loc>https://www.zhoongyikouqiang.com/orthodontics.html</loc>
         <lastmod>2026-05-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -32,7 +32,7 @@
 
     <!-- 种植牙专题页 -->
     <url>
-        <loc>https://www.zhongyikouqiang.com/implant.html</loc>
+        <loc>https://www.zhoongyikouqiang.com/implant.html</loc>
         <lastmod>2026-05-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -41,7 +41,7 @@
 
     <!-- 儿童口腔专题页 -->
     <url>
-        <loc>https://www.zhongyikouqiang.com/pediatric.html</loc>
+        <loc>https://www.zhoongyikouqiang.com/pediatric.html</loc>
         <lastmod>2026-05-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -50,7 +50,7 @@
 
     <!-- 美学修复专题页 -->
     <url>
-        <loc>https://www.zhongyikouqiang.com/cosmetic.html</loc>
+        <loc>https://www.zhoongyikouqiang.com/cosmetic.html</loc>
         <lastmod>2026-05-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

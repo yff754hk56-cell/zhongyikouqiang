@@ -3,7 +3,7 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: https://www.zhongyikouqiang.com/sitemap.xml
+Sitemap: https://www.zhoongyikouqiang.com/sitemap.xml
 
 Crawl-delay: 1
 
