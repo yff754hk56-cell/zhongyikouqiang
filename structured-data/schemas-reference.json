@@ -1,0 +1,23 @@
+{
+    "_说明": "忠一口腔 — 结构化数据参考（JSON-LD格式）。以下Schema可直接嵌入HTML的<script type='application/ld+json'>中。",
+    "_参考": "详见 website/index.html 中已嵌入的结构化数据。",
+    "_Schema类型清单": [
+        "Dentist (继承自 LocalBusiness + MedicalOrganization)",
+        "Person (每位医生独立标记)",
+        "FAQPage (问答页面标记)",
+        "BreadcrumbList (面包屑导航)",
+        "WebSite (网站整体信息)",
+        "OfferCatalog + MedicalProcedure (服务目录)",
+        "AggregateRating (患者评价聚合)"
+    ],
+    "_优先级": {
+        "最关键": ["Dentist/LocalBusiness", "FAQPage", "Person"],
+        "重要": ["MedicalProcedure", "AggregateRating", "WebSite"],
+        "补充": ["BreadcrumbList"]
+    },
+    "_验证工具": [
+        "Google Rich Results Test: https://search.google.com/test/rich-results",
+        "Schema.org Validator: https://validator.schema.org/",
+        "百度结构化数据验证: https://ziyuan.baidu.com/dashboard/index"
+    ]
+}
