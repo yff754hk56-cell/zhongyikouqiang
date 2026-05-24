@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var scrollThreshold = 60;
 
     function updateNavbar() {
+        if (!navbar) return;
         if (window.pageYOffset > scrollThreshold) {
             navbar.classList.add('scrolled');
         } else {
@@ -93,10 +94,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // =============================================
     // 4. 当前可视区域导航高亮
     // =============================================
-    var sectionIds = ['home', 'about', 'services', 'doctors', 'equipment', 'gallery', 'reviews', 'faq', 'contact'];
+    var sectionIds = ['home', 'about', 'trust', 'services', 'process', 'doctors', 'equipment', 'gallery', 'decision', 'faq', 'contact'];
     var navAs = document.querySelectorAll('.nav-links a:not(.nav-cta)');
 
     function updateActiveNav() {
+        if (!navbar) return;
         var scrollPos = window.pageYOffset + 150;
         var current = 'home';
         sectionIds.forEach(function (id) {
@@ -127,46 +129,48 @@ document.addEventListener('DOMContentLoaded', function () {
     var navLinks = document.querySelector('.nav-links');
     var navOverlay = document.querySelector('.nav-overlay');
 
-    function openMenu() {
-        navLinks.classList.add('active');
-        navOverlay.classList.add('active');
-        navToggle.setAttribute('aria-expanded', 'true');
-        document.body.style.overflow = 'hidden';
-    }
-
-    function closeMenu() {
-        navLinks.classList.remove('active');
-        navOverlay.classList.remove('active');
-        navToggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-    }
-
-    navToggle.addEventListener('click', function () {
-        if (navLinks.classList.contains('active')) {
-            closeMenu();
-        } else {
-            openMenu();
+    if (navToggle && navLinks && navOverlay) {
+        function openMenu() {
+            navLinks.classList.add('active');
+            navOverlay.classList.add('active');
+            navToggle.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
         }
-    });
 
-    navOverlay.addEventListener('click', closeMenu);
+        function closeMenu() {
+            navLinks.classList.remove('active');
+            navOverlay.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
 
-    // 菜单内链接点击后关闭
-    navLinks.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-            if (window.innerWidth <= 768) {
+        navToggle.addEventListener('click', function () {
+            if (navLinks.classList.contains('active')) {
                 closeMenu();
+            } else {
+                openMenu();
             }
         });
-    });
 
-    // ESC关闭
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && navLinks.classList.contains('active')) {
-            closeMenu();
-            navToggle.focus();
-        }
-    });
+        navOverlay.addEventListener('click', closeMenu);
+
+        // 菜单内链接点击后关闭
+        navLinks.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                if (window.innerWidth <= 768) {
+                    closeMenu();
+                }
+            });
+        });
+
+        // ESC关闭
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+                closeMenu();
+                navToggle.focus();
+            }
+        });
+    }
 
     // =============================================
     // 6. FAQ手风琴互斥展开
@@ -186,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // =============================================
     // 7. 导航平滑滚动（含偏移）
     // =============================================
-    var allNavLinks = document.querySelectorAll('.nav-links a[href^="#"], a[href^="#services"]');
+    var allNavLinks = document.querySelectorAll('a[href^="#"]');
     allNavLinks.forEach(function (link) {
         link.addEventListener('click', function (e) {
             var href = link.getAttribute('href');
@@ -196,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 var targetId = href.slice(1);
                 var target = document.getElementById(targetId);
                 if (target) {
-                    var navHeight = navbar.offsetHeight;
+                    var navHeight = navbar ? navbar.offsetHeight : 0;
                     var top = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 12;
                     window.scrollTo({ top: top, behavior: 'smooth' });
                 }
@@ -234,6 +238,116 @@ document.addEventListener('DOMContentLoaded', function () {
                 orn.style.transform = 'translateY(' + (rate * factor) + 'px)';
             });
         }, { passive: true });
+    }
+
+    // =============================================
+    // 10. Hero粒子动效
+    // =============================================
+    var canvas = document.querySelector('.hero-particles');
+    if (canvas && window.innerWidth > 768) {
+        var ctx = canvas.getContext('2d');
+        var particles = [];
+        var maxParticles = 40;
+        var hero = document.querySelector('.hero');
+
+        function resizeCanvas() {
+            canvas.width = hero.offsetWidth;
+            canvas.height = hero.offsetHeight;
+        }
+
+        resizeCanvas();
+        window.addEventListener('resize', function () {
+            resizeCanvas();
+        });
+
+        for (var i = 0; i < maxParticles; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                vx: (Math.random() - 0.5) * 0.4,
+                vy: (Math.random() - 0.5) * 0.4,
+                r: Math.random() * 1.8 + 0.5,
+                opacity: Math.random() * 0.35 + 0.1
+            });
+        }
+
+        function drawParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            for (var i = 0; i < particles.length; i++) {
+                var p = particles[i];
+                p.x += p.vx;
+                p.y += p.vy;
+
+                if (p.x < 0) p.x = canvas.width;
+                if (p.x > canvas.width) p.x = 0;
+                if (p.y < 0) p.y = canvas.height;
+                if (p.y > canvas.height) p.y = 0;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(255,255,255,' + p.opacity + ')';
+                ctx.fill();
+            }
+            requestAnimationFrame(drawParticles);
+        }
+
+        drawParticles();
+    }
+
+    // =============================================
+    // 11. 返回顶部按钮
+    // =============================================
+    var backToTop = document.querySelector('.back-to-top');
+    if (backToTop) {
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // =============================================
+    // 12. 图片灯箱
+    // =============================================
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+    var galleryItems = document.querySelectorAll('.gallery-item img');
+
+    if (lightbox && lightboxImg) {
+        galleryItems.forEach(function (img) {
+            img.parentElement.style.cursor = 'zoom-in';
+            img.parentElement.addEventListener('click', function (e) {
+                if (e.target.tagName === 'IMG') {
+                    lightboxImg.src = e.target.src;
+                    lightboxImg.alt = e.target.alt;
+                    lightbox.classList.add('active');
+                    lightbox.setAttribute('aria-hidden', 'false');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        lightbox.addEventListener('click', function (e) {
+            if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+                lightbox.classList.remove('active');
+                lightbox.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+            }
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                lightbox.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+            }
+        });
     }
 
 });
