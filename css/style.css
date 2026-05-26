@@ -1635,13 +1635,52 @@ section.bg-white {
     border: 1px solid var(--color-border-light);
 }
 
-.contact-map-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+.contact-location-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 32px;
+    background:
+        linear-gradient(135deg, rgba(13, 124, 107, 0.08), rgba(196, 155, 60, 0.12)),
+        repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.55) 0 14px, rgba(255, 255, 255, 0.25) 14px 28px);
+}
+
+.contact-location-pin {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 800;
+    box-shadow: var(--shadow);
+    flex-shrink: 0;
+}
+
+.contact-location-copy {
+    max-width: 320px;
+}
+
+.contact-location-copy strong {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin-bottom: 8px;
+}
+
+.contact-location-copy span,
+.contact-location-copy small {
+    display: block;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+}
+
+.contact-location-copy small {
+    margin-top: 8px;
 }
 
 .contact-map-links {
