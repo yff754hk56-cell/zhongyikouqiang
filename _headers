@@ -1,0 +1,16 @@
+/账号密码.json
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-store
+
+/平台注册信息.md
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/README.md
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/content-drafts/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/strategy/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+

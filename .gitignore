@@ -3,5 +3,12 @@ node_modules/
 Thumbs.db
 *.log
 .env
+账号密码.json
+平台注册信息.md
+README.md
+content-drafts/
+strategy/
+structured-data/
+*.local.json
 dist/
 .cache/

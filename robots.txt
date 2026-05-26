@@ -2,6 +2,13 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /api/
+Disallow: /content-drafts/
+Disallow: /strategy/
+Disallow: /structured-data/
+Disallow: /README.md
+Disallow: /平台注册信息.md
+Disallow: /账号密码.json
+Content-Signal: search=yes,ai-input=yes,ai-train=no
 
 Sitemap: https://www.zhongyikouqiang.com/sitemap.xml
 

@@ -6,7 +6,7 @@
     <!-- 首页 -->
     <url>
         <loc>https://www.zhongyikouqiang.com/</loc>
-        <lastmod>2026-05-22</lastmod>
+        <lastmod>2026-05-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <mobile:mobile/>
@@ -15,7 +15,7 @@
     <!-- 牙齿矫正专题页 -->
     <url>
         <loc>https://www.zhongyikouqiang.com/orthodontics.html</loc>
-        <lastmod>2026-05-22</lastmod>
+        <lastmod>2026-05-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <mobile:mobile/>
@@ -24,9 +24,45 @@
     <!-- 种植牙专题页 -->
     <url>
         <loc>https://www.zhongyikouqiang.com/implant.html</loc>
-        <lastmod>2026-05-22</lastmod>
+        <lastmod>2026-05-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <mobile:mobile/>
+    </url>
+
+    <!-- 儿童口腔与儿童早期矫治咨询 -->
+    <url>
+        <loc>https://www.zhongyikouqiang.com/children-orthodontics.html</loc>
+        <lastmod>2026-05-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <mobile:mobile/>
+    </url>
+
+    <!-- 综合牙科 -->
+    <url>
+        <loc>https://www.zhongyikouqiang.com/general-dentistry.html</loc>
+        <lastmod>2026-05-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <mobile:mobile/>
+    </url>
+
+    <!-- 关于忠一口腔 -->
+    <url>
+        <loc>https://www.zhongyikouqiang.com/about.html</loc>
+        <lastmod>2026-05-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <mobile:mobile/>
+    </url>
+
+    <!-- 常见问题 -->
+    <url>
+        <loc>https://www.zhongyikouqiang.com/faq.html</loc>
+        <lastmod>2026-05-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
         <mobile:mobile/>
     </url>
 

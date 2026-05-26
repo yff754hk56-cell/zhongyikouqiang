@@ -1,0 +1,8 @@
+exclude:
+  - 账号密码.json
+  - 平台注册信息.md
+  - README.md
+  - content-drafts/
+  - strategy/
+  - structured-data/
+
